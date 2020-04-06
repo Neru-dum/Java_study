@@ -1,9 +1,11 @@
 
 public class MyApp {
-  // コメントです
-  /*コメント
-  */
   public static void main(String[] args){
-    System.out.println("Hello World");
+    // 変数
+    // 型　変数名
+    // String msg;
+    // msg = "Hellow World Again";
+    String msg = "Hellow World Again";
+    System.out.println(msg);
   }
 }
