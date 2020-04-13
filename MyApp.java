@@ -1,13 +1,19 @@
 
 public class MyApp {
   public static void main(String[] args){    
-    //キャスト
-    // double d = 5535353.232;
-    // int i = (int)d;
-    // System.out.println(i);
+    // if
+    //> >= < <= == !=
+    // && // !
 
-    int i = 10;
-    double d = (double)i /4;
-    System.out.println(d);
+    int score = 95;
+    // if (score > 80) {
+    // System.out.println("Great!");
+    // } else if (score > 60){
+    //   System.out.println("good!");
+    // } else  {
+    //   System.out.println("so so ...!");
+    // }
+    String msg = score > 80 ? "Grat!" : "so so ...!";
+    System.out.println(msg);
   }
 }
