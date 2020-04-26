@@ -1,14 +1,22 @@
 
 public class MyApp {
   public static void main(String[] args){    
-    // 配列
-    // sales.length
-    int[] sales = {700,400,500};
-    // for (int i = 0; i< sales.length; i++){
-    //   System.out.println(sales[i]);      
-    // }
-    for (int sale : sales) {
-      System.out.println(sale);    
-    }
+    // int x = 10;
+    // int y = x;
+    // y = 5;
+    //   System.out.println(x);
+    //   System.out.println(y);
+
+    // int [] a = {3,5,7};
+    // int [] b = a;
+    // b[1] = 8;
+    // System.out.println(a[1]);
+    // System.out.println(b[1]);
+
+    String s = "hello";
+    String t = s;
+    t = "World";
+    System.out.println(s);
+    System.out.println(t);
   }
 }
