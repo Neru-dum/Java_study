@@ -1,22 +1,18 @@
 
 public class MyApp {
+  
+  // method
+  // public static void sayHi()
+  // public static void sayHi(String name)
+  public static String sayHi(String name){
+    // System.out.println("Hi!");
+    // System.out.println("Hi!" + name);
+    return "Hi! " + name;
+  }
   public static void main(String[] args){    
-    // int x = 10;
-    // int y = x;
-    // y = 5;
-    //   System.out.println(x);
-    //   System.out.println(y);
-
-    // int [] a = {3,5,7};
-    // int [] b = a;
-    // b[1] = 8;
-    // System.out.println(a[1]);
-    // System.out.println(b[1]);
-
-    String s = "hello";
-    String t = s;
-    t = "World";
-    System.out.println(s);
-    System.out.println(t);
+    // sayHi("Tom");  
+    // sayHi("Tom");  
+    String msg = sayHi("Steve");
+    System.out.println(msg);
   }
 }
