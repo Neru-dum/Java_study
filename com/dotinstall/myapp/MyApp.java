@@ -9,7 +9,7 @@ public class MyApp {
     // System.out.println(tom.name);
     tom.sayHi();
 
-    AdminUser bob = new AdminUser("bob");
+    AdminUser bob = new AdminUser("tom");
     // System.out.println(bob.name);
     bob.sayHi();
     bob.sayHello();
