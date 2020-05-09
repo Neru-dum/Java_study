@@ -5,11 +5,11 @@ import com.dotinstall.myapp.model.AdminUser;
 
 public class MyApp {
   public static void main(String[] args){   
-    User tom = new User("sum");
+    User tom = new User("tom");
     // System.out.println(tom.name);
     tom.sayHi();
 
-    AdminUser bob = new AdminUser("sum");
+    AdminUser bob = new AdminUser("tom");
     // System.out.println(bob.name);
     bob.sayHi();
     bob.sayHello();
