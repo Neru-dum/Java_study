@@ -17,7 +17,7 @@ class User {
       System.out.println("hello!" + this.name);
     }
 
-    // override
+    // override 要復習
     @Override
     void sayHi(){
       System.out.println("[admin] hi!" + this.name);
