@@ -1,39 +1,27 @@
 class User {
-  String name; 
+  private String name;
+  private int score;
 
-  User(String name){
+  public User(String name, int score){
     this.name = name;
+    this.score = score;
+  }
+  public int getScore() { //getter
+    return this.score;
   }
 
-  void sayHi(){
-    System.out.println("hi!" + this.name);
-  }
-}
-  class AdminUser extends User{
-    AdminUser(String name){
-      super(name);
+  public void setScore(int score){ //setter
+    if (score > 0){
+      this.score = score;
     }
-    void sayHello(){
-      System.out.println("hello!" + this.name);
-    }
-
-    // override 要復習 5/12
-    @Override
-    void sayHi(){
-      System.out.println("[admin] hi!" + this.name);
-    }
-  }  
-
-
-public class MyApp {
-  public static void main(String[] args){   
-    User tom = new User("tom");
-    System.out.println(tom.name);
-    tom.sayHi();
-
-    AdminUser bob = new AdminUser("bob");
-    System.out.println(bob.name);
-    bob.sayHi();
-    bob.sayHello();
   }
 }
+
+  public class MyApp {
+    public static void main(String[] args){   
+      User tom = new User("tom", 65);
+      tom.setScore(85);
+      tom.setScore(-22);
+      System.out.println(tom.getScore());
+    }
+  }
