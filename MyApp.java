@@ -6,7 +6,7 @@ class User {
     this.name = name;
     this.score = score;
   }
-  public int getScore() { //getter
+  public int getScore() { //getter 要復習
     return this.score;
   }
 
