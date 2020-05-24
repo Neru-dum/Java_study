@@ -2,7 +2,7 @@
 
 class User {
   private String name;
-  private static int count; //クラス変数
+  private static int count; 
 
   static{
     User.count = 0;
