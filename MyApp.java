@@ -1,35 +1,26 @@
-// static
+// final: 変更ができない
 
-class User {
-  private String name;
-  private static int count; 
-
-  static{
-    User.count = 0;
-    System.out.println("Static initializer");
-  }
-
-  {
-    System.out.println("Instance initializer");
-  }
+final class User {
+  protected String name;
+  private static final double VERSION = 1.1;
 
   public User(String name){
     this.name = name;
-    User.count++;
-    System.out.println("Constractor");
-
+    User.VERSION = 1.2;
   }
-  public static void getInfo(){ //クラスメソッド
-    System.out.println("# of instatnces: " + User.count);
+  
+  public final void sayHi() {
+    System.out.println("hi!" + this.name);
   }
 }
 
-  public class MyApp {
-    public static void main(String[] args){   
-      User.getInfo(); // 0
-      User tom = new User("tom");
-      User.getInfo(); //1
-      User bob = new User("bob");
-      User.getInfo(); //2
+  class AdminiUser extends User{
+    public AdminiUser(String name){
+      super(name);
     }
+  }
+
+  @Override
+  public final void sayHi(){
+    System.out.println("[admin] hi!" + this.name);
   }
