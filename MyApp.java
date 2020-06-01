@@ -1,6 +1,6 @@
-// final: 変更はできない
+// final: 変更不可
 
-final class User {
+final class User {  
   protected String name;
   private static final double VERSION = 1.1;
 
