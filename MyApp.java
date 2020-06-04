@@ -1,4 +1,4 @@
-// final: 変更不可です。
+// final: 変更不可。
 
 final class User {  
   protected String name;
